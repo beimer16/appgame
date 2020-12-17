@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link  th:href="@{/css/bootstrap.css}" href="../static/css/bootstrap.css" rel="stylesheet">
+    <script th:src="@{/js/jquery.js}" src="../static/js/jquery.js" type="text/javascript"></script>
+    <script th:src="@{/js/bootstrap.js}" src="../static/js/bootstrap.js" type="text/javascript"></script>
+    <link  th:href="@{/css/styles.css}"  href="../static/css/styles.css" rel="stylesheet"/>
+    <script th:src="@{/js/methods.js}" src="../static/js/methods.js"></script>
+    
+    
+    <title>Test sobre alcancia</title>
+
+    <script
+      th:src="@{/js/jquery.js}"
+      type="text/javascript"
+      src="../static/js/jquery.js"
+    ></script>
+
+
+
+    <script
+      th:src="@{/js/methods.js}"
+      type="text/javascript"
+      src="../static/js/methods.js"
+    ></script>
+
+    <link
+      th:href="@{/css/styles.css}"
+      rel="stylesheet"
+      href="../static/css/styles.css"
+    />
+  </head>
+  <body>
+    <div id="container_0" class="container">
+     <h1> Arrastrar las Monedas al Choncho</h1>
+      <div class="row">
+        <div class="col-6" id="container_1">
+          <span
+            ><img
+              th:src="@{/img/moneda50.png}"
+              src="../static/img/moneda50.png"
+              alt="$ 50"
+              draggable="true"
+              ondragstart="evdragstart(event,this)"
+              id="e1"
+            />
+          </span>
+          <span
+            ><img
+              th:src="@{/img/moneda100.png}"
+              src="../static/img/moneda100.png"
+              alt="$ 100"
+              draggable="true"
+              ondragstart="evdragstart(event,this)"
+              id="e2"
+            />
+          </span>
+          <span
+            ><img
+              th:src="@{/img/moneda200.png}"
+              src="../static/img/moneda200.png"
+              alt="$ 500"
+              draggable="true"
+              ondragstart="evdragstart(event,this)"
+              id="e3"
+            />
+          </span>
+          <span
+            ><img
+              th:src="@{/img/moneda500.png}"
+              src="../static/img/moneda500.png"
+              alt="$ 1000"
+              draggable="true"
+              ondragstart="evdragstart(event,this)"
+              id="e4"
+            />
+          </span>
+          <span>
+            <img
+              th:src="@{/img/moneda1000.png}"
+              src="../static/img/moneda1000.png"
+              alt="$ 200"
+              draggable="true"
+              ondragstart="evdragstart(event,this)"
+              id="e5"
+            />
+          </span>
+        </div>
+        <div
+          class="col-6"
+          id="container_2"
+          ondragover="evdragover(event)"
+          ondrop="evdrop(event,this)"
+        ></div>
+      </div>
+         <div class="row"> 
+            <div class="col-6"  id="container_3">
+              <form>
+                <div class="form-group">
+                  <label for="can">Cantidad Total de Monedas</label>
+                  <input type="text" class="form-control" id="can">
+                </div>
+                <div class="form-group">
+                  <label for="c1">Cantidad de 50</label>
+                  <input type="text" class="form-control" id="c1">
+                </div>
+                <div class="form-group">
+                  <label for="c6">Cantidad de 50 en valor</label>
+                  <input type="text" class="form-control" id="c6">
+                </div>
+                <div class="form-group">
+                  <label for="c2">Cantidad de 100</label>
+                  <input type="text" class="form-control" id="c2">
+                </div>
+                <div class="form-group">
+                  <label for="c7">Cantidad de 100 en valor</label>
+                  <input type="text" class="form-control" id="c7">
+                </div>
+                <div class="form-group">
+                  <label for="c3">Cantidad de 200</label>
+                  <input type="text" class="form-control" id="c3">
+                </div>
+                <div class="form-group">
+                  <label for="c8">Cantidad de 200 en valor</label>
+                  <input type="text" class="form-control" id="c8">
+                </div>
+             </form>
+            </div>
+            <div class="col-6"  id="container_4">
+              <form>
+                <div class="form-group">
+                  <label for="c4">Cantidad de 500</label>
+                  <input type="text" class="form-control" id="c4">
+                </div>
+                <div class="form-group">
+                  <label for="c9">Cantidad de 500 en valor</label>
+                  <input type="text" class="form-control" id="c9">
+                </div>
+                <div class="form-group">
+                  <label for="c5">Cantidad de 1000</label>
+                  <input type="text" class="form-control" id="c5">
+                </div>
+                <div class="form-group">
+                  <label for="c10">Cantidad de 1000 en valor</label>
+                  <input type="text" class="form-control" id="c10">
+                </div>
+                </form>
+            </div>
+         </div>
+   
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+
+/*estilo general: resetear*/
+* { margin: 0 auto; padding: 0;  } 
+/*estilo de título y subtítulo*/
+h1 { font:bold 1.5em helvetica; text-align: center; color: navy; margin: 0.5em; }
+h2 { font: bold 1em helvetica; text-align: center; margin: 0.5em; }
+/*estilo de contenedores*/
+#container_0 { width: 800; height: 900px; border: 1px solid black; border-radius: 12px;  }
+#container_1 { width: 50%; height: 550px; background-image: url("../img/gaveta.png"); background-repeat: no-repeat; background-size: 650px; }
+#container_2 { width: 50%; height: 350px; background-image: url("../img/alcancia.png"); background-repeat: no-repeat; background-size: 350px; }
+#container_3 { width: 50%; height: 300px; float: left; overflow: auto;}
+#container_4 { width: 50%; height: 300px; float: left; overflow: auto;}
+
+body{
+    margin: 0 auto; padding: 0; 
+}
+
+#e1{
+
+    margin-left: 98px;
+    margin-top: 95px;
+    width:70px;
+    height: 70px;
+
+}
+
+#e2,#e3,#e5{
+    margin-left: 10px;
+    margin-top: 95px;
+    width:70px;
+    height: 70px;
+
+
+}
+
+#e4
+{
+    
+    margin-left: 20px;
+    margin-top: 95px;
+    width:70px;
+    height: 70px;
+}
+
+
+
